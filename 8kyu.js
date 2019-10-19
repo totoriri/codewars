@@ -66,4 +66,38 @@ function basicOp(operation, value1, value2)
    case '/' : return value1 / value2;
 }
 }
-console.log('+',4,7);
+console.log('+', 4, 7);
+
+
+
+/*4.If/else syntax debug ----------------------------------------
+  Create a function to check if the user is still alive!
+
+  checkAlive/CheckAlive should return true if the player's health is greater than 0 or false if it is 0 or below.
+
+  checkAlive receives one parameter health which will always be a whole number between -10 and 10.
+*/
+
+// my answer1
+function checkAlive (health) {
+  if (health > 0 && health < 11) {
+    return true;
+  } else if (health <= 0 && health > -11) {
+    return false;
+  }
+}
+
+// my answer2
+function checkAlive (health) {
+  return (health <= 0) ? false : true
+ }
+console.log(checkAlive(5))
+
+ 
+// better answer1
+function checkAlive(health) {
+  return health > 0;
+}
+
+//better answer(arrow function)
+const checkAlive = health => health > 0;
