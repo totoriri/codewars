@@ -153,3 +153,18 @@ function removeChar(str){
 const removeChar = str => str.slice(1, -1)
 // When you supply slice with a negative number it subtracts the number from the string's length.
 // ex)"this is a test".slice(-3, -1); //returns "es"
+
+/*8. MakeUpperCase----------------------------------------
+// Write function makeUpperCase.
+*/
+
+// my answer
+function makeUpperCase(str) {
+    return str.toUpperCase();
+}
+
+// other answer
+function makeUpperCase(str) {
+  var res = str.toUpperCase();
+  return res;
+}
