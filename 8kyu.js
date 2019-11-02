@@ -136,3 +136,20 @@ stringToArray("Robin Singh")
 
 // other answer
 let stringToArray = string => string.split(' ');
+
+
+
+/*7.Remove First and Last Character----------------------------------------
+// Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
+// Use conditionals to return the proper message.
+*/
+
+// my answer
+function removeChar(str){
+ return str.slice(1,str.length-1);
+ };
+ 
+// better answer
+const removeChar = str => str.slice(1, -1)
+// When you supply slice with a negative number it subtracts the number from the string's length.
+// ex)"this is a test".slice(-3, -1); //returns "es"
