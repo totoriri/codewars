@@ -188,3 +188,33 @@ For example:
 function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
+
+/*8. MakeUpperCase----------------------------------------
+It's your job to return the right statement depending on the winner!
+
+If the winner is George Saint Pierre he will obviously say:
+
+"I am not impressed by your performance."
+If the winner is Conor McGregor he will most undoubtedly say:
+
+"I'd like to take this chance to apologize.. To absolutely NOBODY!"
+*/
+
+//my answer
+var quote = function(fighter) {
+  var winner = fighter.toLowerCase() 
+      
+    if(winner === 'george saint pierre'){
+    return "I am not impressed by your performance."
+  
+    } else if(winner === 'conor mcgregor'){
+    return "I'd like to take this chance to apologize.. To absolutely NOBODY!"
+    }
+    
+  };
+
+//better answer
+var quote = function(fighter) {
+  console.log(fighter)
+    return fighter.toLowerCase() == 'george saint pierre' ? "I am not impressed by your performance." : "I'd like to take this chance to apologize.. To absolutely NOBODY!"; 
+  };
